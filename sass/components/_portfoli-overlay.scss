@@ -1,0 +1,36 @@
+.portfolio-overlay {
+    position: absolute;
+
+    transform: translateY(100%);
+
+    top: 0;
+    left: 0;
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-overlay-text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    color: var(--primery-white-color);
+    background: rgba(33, 150, 243, 0.9);
+}
+
+
+.portfolio-item {
+    &:hover .portfolio-overlay {
+        transform: translateY(0%);
+    }
+
+}

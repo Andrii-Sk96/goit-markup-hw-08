@@ -1,0 +1,79 @@
+.hoby {
+    
+
+    @media screen and (max-width: $desktop) {
+        display: none;
+    }
+}
+
+.hoby__position {
+    padding-bottom: 94px;
+}
+
+.team__card {
+    width: 270px;
+    height: 428px;
+    padding: 0px 0px 108px 0px;
+
+    background-color: var(--primery-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    border-radius: 0px 0px 4px 4px;
+}
+
+.hoby__element {
+    position: relative;
+
+    margin-left: 0px;
+
+    width: 370px;
+    height: 294px;
+}
+
+.hoby__block {
+    display: flex;
+}
+.list{
+    & .hoby__element+.hoby__element {
+        margin-left: 30px;
+        }
+}
+
+
+.hoby__title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+
+    color: var(--title-text-color);
+}
+
+
+.hoby__texst {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--primery-white-color);
+
+    position: absolute;
+    bottom: 0;
+
+    width: 370px;
+    height: 70px;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-right: 95px;
+    padding-left: 95px;
+
+    background: rgba(47, 48, 58, 0.8);
+}

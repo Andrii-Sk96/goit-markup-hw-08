@@ -1,0 +1,84 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --primery-white-color: #fff;
+    --primary-bg-color: #f5f4fa;
+    --primery-footer-contact: rgba(255, 255, 255, 0.6);
+    --footer-background-color: #2f303a;
+}
+
+/*defold seting*/
+
+body {
+    font-family: Roboto, sans-serif;
+
+    color: var(--primary-text-color);
+}
+
+//breackpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
+
+    @media screen and (min-width: $mobile) {
+            width: 480px;
+        }
+    
+    @media screen and (min-width: $tablet) {
+        width: 768px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        width: 1200px;
+    }
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    
+    
+
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: var(--primary-text-color);
+
+    @media screen and (min-width: $tablet) {
+            display: flex;
+        }
+    
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    display: block;
+    
+}
