@@ -792,7 +792,7 @@ img {
 }
 
 .features__icon {
-  width: auto;
+  width: 48px;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
