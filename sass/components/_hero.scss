@@ -2,6 +2,9 @@
     width: 480px;
     height: 400px;
 
+    display: flex;
+    align-items: center;
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,6 +21,10 @@
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)), url(../images/hero/imgsml@2x.jpg);
         
+        }
+
+        @media screen and (max-width: $mobile) {
+            width: auto;
         }
 
             @media screen and (min-width: $tablet) {
@@ -75,16 +82,11 @@
     margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
+
     text-align: center;
     background-color: var(--footer-background-color);
 }
 
-.hero-title-position{
-    
-    @media screen and (max-width: $desktop) {
-        margin-top: 118px;
-    }
-}
 
 .hero-title {
     width: 360px;
