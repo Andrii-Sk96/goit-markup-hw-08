@@ -1778,11 +1778,6 @@ img {
     display: none;
   }
 }
-@media (min-width: 1200px) {
-  .menu-toggle {
-    display: none;
-  }
-}
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: #fff;
