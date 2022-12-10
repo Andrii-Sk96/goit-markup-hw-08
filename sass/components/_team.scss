@@ -32,8 +32,38 @@
 }
 
 .team__card{
+    width: 450px;
+    height: 622px;
+
     margin-left: auto;
     margin-right: auto;
+     
+    
+
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+        height: 536px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+        height: 428px;
+    }
+}
+
+.team__card img {
+    max-width: 480px;
+    max-height: 460px;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 354px;
+        
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 270px;
+        
+ }
 }
 
 .team__card:nth-child(n + 3){
@@ -43,6 +73,7 @@
 }
 
 .team__list {
+
 flex-wrap: wrap;
     
     display: flex;

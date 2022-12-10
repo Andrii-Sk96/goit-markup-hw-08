@@ -6,7 +6,7 @@ margin-right: auto;
     padding-bottom: 60px;
     background-color: var(--footer-background-color);
     
-    @extend %section
+        
 }
 
 .footer-contacts {
@@ -175,7 +175,7 @@ align-items: center;
     
 
     @media screen and (max-width: $desktop) {
-            flex-direction: column;
+            flex-direction: column
         }
 
 }
