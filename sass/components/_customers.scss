@@ -35,14 +35,14 @@ margin-right: auto;
 }
 
 .customers__element {
-    width: 170px;
+    width: auto;
 }
 
 .customers__link {
     color: #afb1b8;
 
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     align-items: center;
     justify-content: center;
@@ -60,6 +60,14 @@ margin-right: auto;
         border-color: var(--accent-color);
         color: var(--accent-color);
     }
+
+    @media screen and (min-width: $tablet) {
+        width: 226px;
+    }
+
+        @media screen and (min-width: $desktop) {
+            width: 170px;
+        }
 }
 
 .customers__icon {

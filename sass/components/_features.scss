@@ -1,9 +1,15 @@
 .features {
-@extend %section
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.features__block {
+    @extend %section
 }
 
 .features__list {
+gap: 30px;
+
 @media screen and (max-width: $mobile) {
         width: auto;
     }
@@ -13,7 +19,7 @@
     }
 }
 
-.features__element:nth-child(n + 3){
+/* .features__element:nth-child(n + 3){
     @media screen and (max-width: $desktop) {
         margin-top: 30px;
     }
@@ -24,11 +30,12 @@
     @media screen and (min-width: $desktop) {
      margin-left: 30px;
 }
-
-
-}
+} */
 
 .features__element {
+display: flex;
+flex-direction: column;
+
     width: auto;
 
     margin-left: auto;

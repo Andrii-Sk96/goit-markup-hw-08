@@ -23,10 +23,18 @@ margin-right: auto;
     font-family: Raleway, sans-serif;
     text-decoration: none;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
 
     color: var(--primery-white-color);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 24px;
+    }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 26px;
+        }
 }
 
 .list-footer {
@@ -40,7 +48,7 @@ margin-right: auto;
     color: var(--primary-text-color);
     
     & .footer-li+.footer-li {
-        margin-top: 9px;
+        margin-top: 8px;
     }
 }
 
@@ -51,8 +59,13 @@ margin-right: auto;
 
 .footer-styles {
     display: flex;
-
     flex-direction: column;
+
+    @media screen and (max-width: $desktop) {
+        text-align: center;
+    }
+
+    
 }
 
 .footer-address {
@@ -124,17 +137,33 @@ margin-right: auto;
 }
 
 .footer-display {
+
+    @media screen and (min-width: $tablet) {
+margin-left: auto;
+margin-right: auto;
+
+        width: 768px;    
+        
+        flex-flow: wrap;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
 }
 
 .div-social {
-margin-top: 60px;
+
 
 display: flex;
 flex-direction: column;
 align-items: center;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 60px;
+        }
 
     @media screen and (min-width: $desktop) {
         display: flex;
@@ -146,9 +175,8 @@ align-items: center;
 }
 
 .container-fooder {
-     margin-top: 60px;
-
-    @media screen and (max-width: $desktop) {
+    
+    @media screen and (max-width: $tablet) {
         flex-direction: column;
         text-align: center;
         align-items: center;
@@ -171,6 +199,11 @@ align-items: center;
 }
 
 .footer-form {
+
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+        margin-top: 60px;
+    }
+
     display: flex;
     
 

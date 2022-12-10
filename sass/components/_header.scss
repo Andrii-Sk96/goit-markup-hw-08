@@ -41,26 +41,57 @@
 
 
 .header__container {
+    height: 60px;
     align-items: center;
     display: flex;
+
+    @media screen and (min-width: $tablet) {
+        height: 80px;
+    }
+
+        @media screen and (min-width: $desktop) {
+            height: 80px;
+        }
 }
 
 .logo {
+
+
     text-decoration: none;
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
 
     color: var(--title-text-color);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 26px;
+    }
+    
 }
 
 .logo__position {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
-}
 
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        
+    }
+    
+        @media screen and (min-width: $tablet) {
+            padding-top: 24px;
+            padding-bottom: 25px;
+            margin-right: 93px;
+        }
+}
 .logo__link {
     text-decoration: none;
 
@@ -116,7 +147,7 @@
 .contact__link {
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     
     color: #757575;
@@ -131,6 +162,10 @@
     &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
     }
 }
 

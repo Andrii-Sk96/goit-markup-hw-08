@@ -33,6 +33,7 @@
 
 .hoby__block {
     display: flex;
+    flex-direction: column;
 }
 .list{
     & .hoby__element+.hoby__element {

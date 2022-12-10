@@ -23,6 +23,10 @@
     
 }
 
+.team__block {
+    display: table-row-group;
+}
+
 .card__container {
     text-align: center;
     padding-left: 0px;
@@ -116,14 +120,33 @@ flex-wrap: wrap;
 }
 
 .title {
+    margin-bottom: 30px;
+
+    font-family: Roboto;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.17;
+        text-align: center;
+  
+
+    color: var(--title-text-color);
+
+@media screen and (min-width: $tablet) {
+    font-family: Roboto;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.17;
+        text-align: center;
+}
+
+@media screen and (min-width: $desktop) {
     margin-bottom: 50px;
 
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-
-    color: var(--title-text-color);
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+}
 
 }
 
