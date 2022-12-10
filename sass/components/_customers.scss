@@ -20,12 +20,7 @@ margin-right: auto;
     list-style: none;
     gap: 30px;
 
-    justify-content: center
-    ;
-
-    & .customers__element+.customers__element {
-         
-    }
+    justify-content: center;
 
     @media screen and (min-width: $tablet) {
         flex-wrap: wrap;
