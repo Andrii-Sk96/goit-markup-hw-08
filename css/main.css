@@ -349,7 +349,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    width: auto;
     height: 600px;
     background-repeat: no-repeat;
     background-position: center;
@@ -1774,6 +1774,11 @@ img {
 }
 
 @media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
   .menu-toggle {
     display: none;
   }
