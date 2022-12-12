@@ -48,18 +48,22 @@ margin-right: auto;
     color: var(--primary-text-color);
     
     & .footer-li+.footer-li {
-        margin-top: 8px;
+        margin-top: 12px;
     }
 }
 
 
 .adres-footer {
-    margin-top: 20px;
+    margin-top: 28px;
 }
 
 .footer-styles {
     display: flex;
     flex-direction: column;
+
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin-right: 165px;
+}
 
     @media screen and (max-width: $desktop) {
         text-align: center;
@@ -136,26 +140,9 @@ margin-right: auto;
         }
 }
 
-.footer-display {
 
-    @media screen and (min-width: $tablet) {
-margin-left: auto;
-margin-right: auto;
-
-        width: 768px;    
-        
-        flex-flow: wrap;
-            justify-content: space-around;
-            align-items: baseline;
-        }
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-}
 
 .div-social {
-
 
 display: flex;
 flex-direction: column;
@@ -183,6 +170,8 @@ align-items: center;
     }
 
     @media screen and (min-width: $desktop) {
+display: flex;
+
         width: 1200px;
             margin: 0 auto;
 
@@ -229,8 +218,12 @@ align-items: center;
 
     padding-left: 16px;
 
-    width: 450px;
+    max-width: 450px;
     height: 50px;
+
+    @media screen and (min-width: $mobile) {
+        width: 385px;
+    }
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -312,4 +305,19 @@ align-items: center;
     fill: var(--primery-white-color);
 }
 
+.footer-div-position{ 
+    
+@media screen and (min-width: $tablet) {
+    display: flex;
+    
+    align-items: baseline;
+    justify-content: center;
+}
 
+@media screen and (min-width: $desktop) {
+    display: flex;
+
+    
+}
+
+}

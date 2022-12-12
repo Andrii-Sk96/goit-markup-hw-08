@@ -5,40 +5,23 @@ margin-right: auto;
 @extend %section
 }
 
-.customers__position {
-
-   
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-}
-    
-
 .customers__list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     gap: 30px;
 
-    justify-content: center;
-
-    @media screen and (min-width: $tablet) {
-        flex-wrap: wrap;
-    }
-
-        
+    justify-content: center;    
 }
 
-.customers__element {
-    width: auto;
-}
 
 .customers__link {
     color: #afb1b8;
 
-    display: flex;
-    width: 210px;
     height: 92px;
+    width: 210px;
+
+    display: flex;
     align-items: center;
     justify-content: center;
 
@@ -54,6 +37,10 @@ margin-right: auto;
     &:focus {
         border-color: var(--accent-color);
         color: var(--accent-color);
+    }
+
+    @media screen and (min-width: $mobile) {
+    width: 210px;
     }
 
     @media screen and (min-width: $tablet) {
